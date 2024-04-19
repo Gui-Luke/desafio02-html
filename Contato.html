@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica Harmonia Vital</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+        }
+
+    #button {
+        background-color: #007BFF;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.5s;
+        transition: ease 1s;
+        width: 100px;
+        border-radius: 8px;
+    }
+
+    #button:hover{
+        background-color: #0056b3;
+        transform: scale(1.1);
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li id="link"><a id="page" href="index.html">Página Principal</a></li>
+                <li id="link"><a id="page" href="SobreAClinica.html">Sobre a Clínica</a></li>
+                <li id="link"><a id="page" href="HorárioAtendimento.html">Horário de Atendimento</a></li>
+                <li id="link"><a id="page" href="Contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <h1>Clínica Médica Harmonia Vital</h1>
+                <img src="assets/Contato.svg" alt="Imagem de telefone para a página de contato." width="100px">
+            </div>
+    
+            <div class="content">
+              <form name="signUp" target="_blank" onsubmit="alert('Formulário Enviado')" autocomplete="on" method="post" action="#">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="Name">*Nome: </label><input type="text" name="Name" placeholder="Insira seu nome aqui" required>
+                    <label for="Email">*E-mail</label> <input type="email" name="Email" placeholder="Insira seu e-mail aqui" required><br>
+                    <label for="Celular">Celular</label> <input type="tel name="Celular" id="Celular" minlength="11" maxlength="11" placeholder="(DDD) 9 + Número" required>
+                    <label for="Wpp">*WhatsApp</label> <input type="tel" id="Wpp" minlength="10" maxlength="11" placeholder="Seu número WhatsApp" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Como podemos te ajudar? </legend>
+                    <label for="">Assunto: </label> <input type="text" name="assunto">
+                    <label for="content">*Mensagem: </label><textarea name="content" id="content" cols="20" rows="5" required></textarea>
+                </fieldset>
+                <div class="buttons">
+                    <button id="button" type="reset">Limpar</button>
+                    <button id="button" type="submit">Enviar</button>
+                </div>
+              </form>  
+
+
+              <h1>Contato</h1>
+              <h4>Nós atendemos pelos números:</h4>
+              <p><strong>Celular: </strong> (81) 9 1234.5678</p>
+              <p><strong>WhatsApp: </strong> (81) 1234.5678</p>
+
+              <h4>Nosso endereço</h4>
+              <p>Nosso endereço está localizado na R. das Flôres, 123 - Rio Doce Etapa Um.</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.326532515671!2d-34.84254930000001!3d-7.965167000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3d9f1af87fdf%3A0xf10e8ccfbc8326f0!2sR.%20das%20Fl%C3%B4res%2C%20123%20-%20Rio%20Doce%20Etapa%20Um%2C%20Olinda%20-%20PE%2C%2053050-080!5e0!3m2!1spt-BR!2sbr!4v1713493028627!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+            <div class="footer">
+                <p>Endereço: R. das Flôres, 123 - Rio Doce Etapa Um</p>
+                <p>Telefone: (81) 9 1234.5678</p>
+                <p>E-mail: contato@harmoniavital.com.br</p>
+                <a href="https://www.linkedin.com/in/gui-lucas-cs/" target="_blank"> <img src="assets/LinkedIn_icon_circle.svg.png" alt="Direcionamento para o endereço do LinkedIn." width="20x"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
